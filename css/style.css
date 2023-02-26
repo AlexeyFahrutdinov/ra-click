@@ -407,3 +407,30 @@
  .pv:nth-child(6) {
     background-color: #fce2ce
  }
+
+/*Мотивационный блок на стыке списка вакансий и выгод*/
+
+ .motivation {
+background-color: #00bcd4 ;
+}
+
+.motivation>.container {
+    padding: 20px;
+    display: flex;
+    
+}
+.motivation-item {
+    color: rgb(249, 249, 249);
+    margin: auto 30px;
+    text-align: center;
+}
+
+.motivation-item h3 {
+font-size: 36px;
+font-family: "GolosTextBlack" ;
+}
+
+.motivation p {
+    font-family: "GolosTextWebRegular" ;
+    font-size: 24px;
+}
