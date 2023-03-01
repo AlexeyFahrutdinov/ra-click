@@ -137,6 +137,7 @@
 
  .vacansy {
      background-color: #ECEEF7;
+     padding-bottom: 50px;
  }
 
 
@@ -268,7 +269,7 @@
 
  .fa-bookmark {}
 
- .cta-container h2 {
+ .cta-container h2, h2.cta {
      text-align: center;
      font-family: "GolosTextBlack";
      font-size: 48px;
@@ -349,6 +350,7 @@
 
  .vigodi {
      background-color: aqua;
+     margin-bottom: 50px;
  }
 
  .vigodi .pv {
@@ -434,3 +436,45 @@ font-family: "GolosTextBlack" ;
     font-family: "GolosTextWebRegular" ;
     font-size: 24px;
 }
+
+/*Футер*/ 
+
+.footer-social {
+padding-top: 50px;
+    background-color: #0f4c75;
+}
+
+.footer-social .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social .social-media .fa {
+    font-size: 42px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    transition: 1s;
+    color: white;
+    margin: 0 50px 50px 50px;
+}
+
+.footer-social .social-media .fa:hover {
+    background-color: #7439F9;
+    background: linear-gradient(to bottom, #19fcfc, #831bf9);
+    border: 2px solid #831bf9;
+}
+
+.footer-text {
+    padding-bottom: 50px;
+}
+
+.footer-text p {
+    text-align: center;
+    font-size: 18px;
+    font-family: "GolosTextWebRegular" ;
+    line-height: 10px;
+}
+
