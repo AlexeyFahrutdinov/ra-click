@@ -31,6 +31,11 @@
      box-sizing: border-box;
  }
 
+ a {
+    text-decoration: none;
+    color:inherit;
+ }
+
  .header {
      background-image: url(/img/bg.jpg);
      background-repeat: no-repeat;
@@ -52,7 +57,7 @@
      text-align: center;
      font-family: "GolosTextWebRegular", sans-serif;
      font-weight: 400;
-     font-size: 15px;
+     font-size: 18px;
  }
 
  .top-menu li {
@@ -63,6 +68,8 @@
  .top-menu li:hover {
      text-decoration: underline;
  }
+
+
 
  .offer h1 {
      font-family: "GolosTextBlack";
@@ -138,6 +145,7 @@
  .vacansy {
      background-color: #ECEEF7;
      padding-bottom: 50px;
+     counter-reset: mycount 0;
  }
 
 
@@ -176,19 +184,17 @@
      display: flex;
      margin: 0 auto;
      width: calc(100% - 20px);
+     flex-wrap: wrap;
 
  }
 
  .card {
      background-color: white;
-     width: calc(33.33% - 20px);
+     width: calc(32% - 20px);
      margin: 20px;
      border-radius: 0 50px 0 0;
      transition: 0.5s;
- }
-
- .card:hover {
-     transform: translateY(-20px);
+     
  }
 
  .card h3 {
@@ -209,11 +215,14 @@
  .img-icon {
      display: inline-block;
      position: relative;
+     counter-increment: mycount;
+   
+     
  }
 
  .img-icon::before {
-     counter-increment: myCounter;
-     content: counter(myCounter);
+     
+     content: counter(mycount);
      background: #e6739f;
      width: 50px;
      height: 50px;
