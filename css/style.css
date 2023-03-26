@@ -161,7 +161,7 @@
      font-family: "GolosTextBlack";
  }
 
- .icon-vacansy, {
+ .icon-vacansy {
      margin: 0 auto;
      width: 44px;
      padding: 40px 0 10px 0;
@@ -275,8 +275,6 @@
  .fa {
      margin: 0 auto;
  }
-
- .fa-bookmark {}
 
  .cta-container h2, h2.cta {
      text-align: center;
