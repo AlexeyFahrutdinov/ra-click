@@ -37,9 +37,11 @@
  }
 
  .header {
-     background-image: url(/img/bg.jpg);
+     background-image: url(../img/bg.jpg);
      background-repeat: no-repeat;
+     background-size: cover;
      color: #ffffff;
+     height: 800px;
  }
 
  .header-box {
@@ -47,6 +49,7 @@
      justify-content: space-between;
      align-items: baseline;
      margin: 0 50px;
+     width: calc(100% - 150px);
  }
 
  .top-menu {
@@ -138,6 +141,7 @@
 
 
 
+/*Блок с вакансиями */
  .vacansy-container, .cta-container {
     padding-top: 55px;
  }
@@ -182,6 +186,7 @@
 
  .card-vacansy {
      display: flex;
+     justify-content: center;
      margin: 0 auto;
      width: calc(100% - 20px);
      flex-wrap: wrap;
@@ -190,7 +195,7 @@
 
  .card {
      background-color: white;
-     width: calc(32% - 20px);
+     width: calc(30% - 20px);
      margin: 20px;
      border-radius: 0 50px 0 0;
      transition: 0.5s;
@@ -253,7 +258,7 @@
  }
 
  .card .button {
-     width: calc(50% - 20px);
+     width: calc(70% - 20px);
      font-size: 20px;
      font-weight: 700;
      margin: 40px auto;
@@ -484,4 +489,38 @@ padding-top: 50px;
     font-family: "GolosTextWebRegular" ;
     line-height: 10px;
 }
+
+@media screen and (max-width: 1200px) {
+.card {
+     background-color: white;
+     width: calc(45% - 20px);
+     margin: 20px;
+     border-radius: 0 50px 0 0;
+     transition: 0.5s;
+     
+ }
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+         background-color: white;
+         width: calc(80% - 20px);
+         margin: 20px;
+         border-radius: 0 50px 0 0;
+         transition: 0.5s;
+         
+     }
+    }
+
+    @media screen and (max-width: 768px) {
+        .card {
+            
+             background-color: white;
+             width: calc(80% - 20px);
+             margin: 20px;
+             border-radius: 0 50px 0 0;
+             transition: 0.5s;
+             
+         }
+        }
 
