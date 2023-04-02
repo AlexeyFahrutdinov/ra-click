@@ -36,6 +36,11 @@
     color:inherit;
  }
 
+ .all_container {
+    max-width: 1400px;
+    margin: 0 auto;
+ }
+
  .header {
      background-image: url(../img/bg.jpg);
      background-repeat: no-repeat;
@@ -431,9 +436,12 @@ background-color: #00bcd4 ;
 .motivation>.container {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 .motivation-item {
+    width: calc(33% - 60px);
     color: rgb(249, 249, 249);
     margin: auto 30px;
     text-align: center;
@@ -491,6 +499,9 @@ padding-top: 50px;
 }
 
 @media screen and (max-width: 1200px) {
+    .all_container {
+        max-width: 1200px;
+    }
 .card {
      background-color: white;
      width: calc(45% - 20px);
@@ -499,9 +510,17 @@ padding-top: 50px;
      transition: 0.5s;
      
  }
+ .motivation-item {
+    width: calc(45% - 60px);
+}
+
+
 }
 
 @media screen and (max-width: 992px) {
+    .all_container {
+        max-width: 992px;
+    }
     .card {
          background-color: white;
          width: calc(80% - 20px);
@@ -510,9 +529,17 @@ padding-top: 50px;
          transition: 0.5s;
          
      }
+     .motivation-item {
+        width: calc(80% - 60px);
     }
+    }
+  
+    
 
     @media screen and (max-width: 768px) {
+        .all_container {
+            max-width: 768px;
+        }
         .card {
             
              background-color: white;
@@ -522,5 +549,8 @@ padding-top: 50px;
              transition: 0.5s;
              
          }
+         .motivation-item {
+            width: calc(80% - 60px);
+        }
         }
 
