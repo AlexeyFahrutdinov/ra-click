@@ -1,436 +1,449 @@
- @font-face {
-     font-family: "GolosTextWebRegular";
-     src: url(/fonts/18549.ttf);
- }
+@font-face {
+    font-family: "GolosTextWebRegular";
+    src: url(/fonts/18549.ttf);
+}
 
- @font-face {
-     font-family: "GolosTextBlack";
-     src: url(/fonts/Golostextblack.ttf)
- }
+@font-face {
+    font-family: "GolosTextBlack";
+    src: url(/fonts/Golostextblack.ttf)
+}
 
- @font-face {
-     font-family: "GolosTextMedium";
-     src: url(/fonts/Golostextmedium.ttf);
- }
+@font-face {
+    font-family: "GolosTextMedium";
+    src: url(/fonts/Golostextmedium.ttf);
+}
 
 
  * {
-     box-sizing: inherit;
- }
+    box-sizing: inherit;
+}
 
- h1,
- h2 {
-     margin: 0;
-     padding: 0;
- }
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
 
- body {
-     margin: 0;
-     padding: 0;
+body {
+    margin: 0;
+    padding: 0;
 
-     box-sizing: border-box;
- }
+    box-sizing: border-box;
+}
 
- a {
+a {
     text-decoration: none;
-    color:inherit;
- }
+    color: inherit;
+}
 
- .all_container {
+.all_container {
     max-width: 1400px;
     margin: 0 auto;
- }
+}
 
- .header {
-     background-image: url(../img/bg.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     color: #ffffff;
-     height: 800px;
- }
+.header {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 800px;
+}
 
- .header-box {
-     display: flex;
-     justify-content: space-between;
-     align-items: baseline;
-     margin: 0 50px;
-     width: calc(100% - 150px);
- }
+.top-menu {
+   padding: 50px 0;
+}
 
- .top-menu {
-     padding: 50px 0;
- }
+.top-menu ul {
+   text-align: center;
+   font-family: "GolosTextWebRegular", sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+}
 
- .top-menu ul {
-     text-align: center;
-     font-family: "GolosTextWebRegular", sans-serif;
-     font-weight: 400;
-     font-size: 18px;
- }
+.top-menu li {
+   display: inline;
+   margin: 0 20px;
+}
 
- .top-menu li {
-     display: inline;
-     margin: 0 20px;
- }
-
- .top-menu li:hover {
-     text-decoration: underline;
- }
+.top-menu li:hover {
+   text-decoration: underline;
+}
 
 
+.header-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 50px;
+}
 
- .offer h1 {
-     font-family: "GolosTextBlack";
-     font-size: 80px;
-     margin: 30px 0;
- }
+.offer{
+   width: 85%;
+   margin: 0 auto;
+}
 
- .offer h2,
- .h2 {
-     font-family: "GolosTextMedium";
-     margin: 30px 0 80px;
- }
+.offer h1 {
+    font-family: "GolosTextBlack";
+    font-size: 80px;
+    margin: 30px 0;
+}
 
- .h2 {
-     display: flex;
-     align-items: baseline;
-     font-size: 25px;
-     font-weight: 700;
- }
+.offer h2,
+.h2 {
+    font-family: "GolosTextMedium";
+    margin: 30px 0 80px;
+}
 
- .header-button,
- .card .button {
-     background: linear-gradient(to right bottom, #19fcfc, #831bf9);
-     border-radius: 5px;
-     padding: 18px 25px;
-     margin-right: 20px;
-     transition: 0.5s;
- }
+.h2 {
+    display: flex;
+    align-items: baseline;
+    font-size: 25px;
+    font-weight: 700;
+}
 
- .header-button:hover,
- .card .button {
-     transform: translateY(10px)
- }
+.header-button,
+.card .button {
+    background: linear-gradient(to right bottom, #19fcfc, #831bf9);
+    border-radius: 5px;
+    padding: 18px 25px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
 
- .header .fa {
-     font-size: 42px;
-     border-radius: 50%;
-     border: 2px solid #ffffff;
-     padding: 10px;
-     margin: 10px 0;
-     transition: 1s;
+.header-button:hover,
+.card .button {
+    transform: translateY(10px)
+}
 
- }
+.header .fa {
+    font-size: 42px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    transition: 1s;
 
- .header .fa:hover {
-     background-color: #7439F9;
-     background: linear-gradient(to bottom, #19fcfc, #831bf9);
-     border: 2px solid #831bf9;
+}
 
- }
+.header .fa:hover {
+    background-color: #7439F9;
+    background: linear-gradient(to bottom, #19fcfc, #831bf9);
+    border: 2px solid #831bf9;
+
+}
 
 
 
- .test {
-     width: 200px;
-     height: 50px;
-     background: linear-gradient(to top left, powderblue, pink);
 
-     color: white;
-     margin: 0 auto;
- }
 
- .test:hover {
-     transform: translateY(10px)
- }
+.test {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to top left, powderblue, pink);
+
+    color: white;
+    margin: 0 auto;
+}
+
+.test:hover {
+    transform: translateY(10px)
+}
 
 
 
 /*Блок с вакансиями */
- .vacansy-container, .cta-container {
+.vacansy-container,
+.cta-container {
     padding-top: 55px;
- }
+}
 
- .vacansy {
-     background-color: #ECEEF7;
-     padding-bottom: 50px;
-     counter-reset: mycount 0;
- }
+.vacansy {
+    background-color: #ECEEF7;
+    padding-bottom: 50px;
+    counter-reset: mycount 0;
+}
 
 
 
- .vacansy-container h2, .vacansy-container i, .vigodi i, .vigodi h2 {
-     text-align: center;
-     font-size: 48px;
-     color: #1F4068;
+.vacansy-container h2,
+.vacansy-container i,
+.vigodi i,
+.vigodi h2 {
+    text-align: center;
+    font-size: 48px;
+    color: #1F4068;
 
- }
+}
 
- .vacansy-container h2, .vigodi h2 {
-     font-family: "GolosTextBlack";
- }
+.vacansy-container h2,
+.vigodi h2 {
+    font-family: "GolosTextBlack";
+}
 
- .icon-vacansy {
-     margin: 0 auto;
-     width: 44px;
-     padding: 40px 0 10px 0;
- }
+.icon-vacansy {
+    margin: 0 auto;
+    width: 44px;
+    padding: 40px 0 10px 0;
+}
 
- .vacansy-container p {
+.vacansy-container p {
     padding-top: 50px;
-     width: 50%;
-     text-align: center;
-     margin: 20px auto 30px;
-     font-weight: 400;
-     font-family: 'GolosTextWebRegular', sans-serif;
-     font-size: 24px;
-     line-height: 1.55;
-     color: #1F4068;
-     ;
- }
+    width: 50%;
+    text-align: center;
+    margin: 20px auto 30px;
+    font-weight: 400;
+    font-family: 'GolosTextWebRegular', sans-serif;
+    font-size: 24px;
+    line-height: 1.55;
+    color: #1F4068;
+    ;
+}
 
- .card-vacansy {
-     display: flex;
-     justify-content: center;
-     margin: 0 auto;
-     width: calc(100% - 20px);
-     flex-wrap: wrap;
+.card-vacansy {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    flex-wrap: wrap;
 
- }
+}
 
- .card {
-     background-color: white;
-     width: calc(30% - 20px);
-     margin: 20px;
-     border-radius: 0 50px 0 0;
-     transition: 0.5s;
-     
- }
+.card {
+    background-color: white;
+    width: calc(30% - 20px);
+    margin: 20px;
+    border-radius: 0 50px 0 0;
+    transition: 0.5s;
 
- .card h3 {
-     font-family: "GolosTextBlack";
-     color: #1f4068;
-     font-size: 24px;
-     text-align: center;
- }
+}
 
- .card img {
+.card h3 {
+    font-family: "GolosTextBlack";
+    color: #1f4068;
+    font-size: 24px;
+    text-align: center;
+}
 
-     width: calc(100% - 60px);
-     height: auto;
-     margin: 0 30px;
+.card img {
 
- }
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 0 30px;
 
- .img-icon {
-     display: inline-block;
-     position: relative;
-     counter-increment: mycount;
-   
-     
- }
+}
 
- .img-icon::before {
-     
-     content: counter(mycount);
-     background: #e6739f;
-     width: 50px;
-     height: 50px;
-     line-height: 50px;
-     text-align: center;
-     color: #f9f9f9;
-     font-size: 24px;
-     position: absolute;
-     top: -20px;
-     left: 5px;
-     border-radius: 50%;
-     border: 4px solid #fff;
-     font-family: 'GolosTextWebRegular', sans-serif;
- }
-
- .card p {
-     width: calc(100% - 60px);
-     text-align: start;
-
- }
-
- .card h4 {
-     font-family: "GolosTextMedium";
-     text-align: center;
-     color: #1F4068;
-     font-size: 24px;
-     font-weight: 400;
- }
-
- .card .button {
-     width: calc(70% - 20px);
-     font-size: 20px;
-     font-weight: 700;
-     margin: 40px auto;
-     color: white;
-     text-transform: uppercase;
-     text-align: center;
- }
+.img-icon {
+    display: inline-block;
+    position: relative;
+    counter-increment: mycount;
 
 
- .call-to-action {
-     background-color: #5F6CAF;
- }
+}
 
- .cta-container {
-     padding: 30px;
-     padding-top: 55px;
- }
+.img-icon::before {
 
- .fa {
-     margin: 0 auto;
- }
+    content: counter(mycount);
+    background: #e6739f;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 24px;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    font-family: 'GolosTextWebRegular', sans-serif;
+}
 
- .cta-container h2, h2.cta {
-     text-align: center;
-     font-family: "GolosTextBlack";
-     font-size: 48px;
-     color: #f9f9f9;
-     margin-bottom: 40px;
- }
+.card p {
+    width: calc(100% - 60px);
+    text-align: start;
 
- .cta-icon {
-     width: calc(8.33% - 20px);
-     margin: 0 auto;
-     font-size: 48px;
-     color: #f9f9f9;
- }
+}
 
- p.cta {
-     text-align: center;
-     font-family: "GolosTextMedium";
-     font-size: 18px;
-     color: #f9f9f9;
-     margin-bottom: 10px;
-     margin-top: 10px;
+.card h4 {
+    font-family: "GolosTextMedium";
+    text-align: center;
+    color: #1F4068;
+    font-size: 24px;
+    font-weight: 400;
+}
 
- }
-
- p.cta1 {
-     margin-bottom: 40px;
- }
-
- .cta-form {
-     margin-top: 40px;
-     display: flex;
-     flex-wrap: wrap;
-     margin: 0 auto;
-     align-items: center;
- }
-
- .cta-form input {
-     width: calc(33.33% - 20px);
-     margin: 0 10px;
-     padding: 14px 10px;
-     border: 1px solid #e7e7e7;
-     border-radius: 3px;
- }
-
- .cta-form input::placeholder {
-     text-align: center;
-     font-size: 20px;
-     font-family: 'GolosTextWebRegular', sans-serif;
-     color: #B3C8EA;
- }
-
- .cta-form button {
-     padding: 12px 10px;
-     border: 0px solid white;
-     width: calc(33.33% - 20px);
-     border-radius: 3px;
-     font-size: 18px;
-     font-family: "GolosTextMedium";
-     background-image: linear-gradient(to right bottom, #ffce3a, #ff0e69);
-     color: #f9f9f9;
- }
-
- .sogl-obr-pd {
-     display: flex;
-     margin: 10px auto;
-     color: #f9f9f9;
+.card .button {
+    width: calc(70% - 20px);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 40px auto;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 
- }
+.call-to-action {
+    background-color: #5F6CAF;
+}
 
- .sogl-obr-pd input {
-     width: 20px;
-     height: auto;
- }
+.cta-container {
+    padding: 30px;
+    padding-top: 55px;
+}
+
+.fa {
+    margin: 0 auto;
+}
+
+.cta-container h2,
+h2.cta {
+    text-align: center;
+    font-family: "GolosTextBlack";
+    font-size: 48px;
+    color: #f9f9f9;
+    margin-bottom: 40px;
+}
+
+.cta-icon {
+    width: calc(8.33% - 20px);
+    margin: 0 auto;
+    font-size: 48px;
+    color: #f9f9f9;
+}
+
+p.cta {
+    text-align: center;
+    font-family: "GolosTextMedium";
+    font-size: 18px;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+p.cta1 {
+    margin-bottom: 40px;
+}
+
+.cta-form {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cta-form input {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    padding: 14px 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+}
+
+.cta-form input::placeholder {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'GolosTextWebRegular', sans-serif;
+    color: #B3C8EA;
+}
+
+.cta-form button {
+    padding: 12px 10px;
+    border: 0px solid white;
+    width: calc(33.33% - 20px);
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: "GolosTextMedium";
+    background-image: linear-gradient(to right bottom, #ffce3a, #ff0e69);
+    color: #f9f9f9;
+}
+
+.sogl-obr-pd {
+    display: flex;
+    margin: 10px auto;
+    color: #f9f9f9;
 
 
- /* Выгоды */
+}
 
- .vigodi {
-     background-color: aqua;
-     margin-bottom: 50px;
- }
-
- .vigodi .pv {
-     padding: 30px 40px;
-     border-radius: 20px;
- }
+.sogl-obr-pd input {
+    width: 20px;
+    height: auto;
+}
 
 
+/* Выгоды */
 
- .icon-vigodi, .icon-vacansy {
+.vigodi {
+    background-color: aqua;
+    margin-bottom: 50px;
+}
+
+.vigodi .pv {
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+
+
+
+.icon-vigodi,
+.icon-vacansy {
     width: 44px;
     margin: 0 auto;
- }
+}
 
- .vigodi .container {
+.vigodi .container {
     padding-top: 50px;
-    background: linear-gradient(to bottom,#ffffff,#b0e8e8,#ffffff);
- }
+    background: linear-gradient(to bottom, #ffffff, #b0e8e8, #ffffff);
+}
 
- .wraper {
+.wraper {
     margin-top: 40px;
- }
+}
 
- .pv {
+.pv {
     width: fit-content;
     text-align: center;
     font-weight: 400;
-    font-family: 'GolosTextWebRegular',sans-serif;
+    font-family: 'GolosTextWebRegular', sans-serif;
     font-size: 24px;
     line-height: 1.55;
     background: #fff;
     margin: 30px auto;
-    box-shadow: 0 22px 30px 0 rgba(15,8,49,.1);
- }
+    box-shadow: 0 22px 30px 0 rgba(15, 8, 49, .1);
+}
 
- .pv:nth-child(1) {
+.pv:nth-child(1) {
     background-color: #ffc1f3;
- }
+}
 
- .pv:nth-child(2) {
+.pv:nth-child(2) {
     background-color: #fce2ce;
- }
+}
 
- .pv:nth-child(3) {
+.pv:nth-child(3) {
     background-color: #f9f7d9;
- }
+}
 
- .pv:nth-child(4) {
+.pv:nth-child(4) {
     background-color: #cffffe
- }
+}
 
- .pv:nth-child(5) {
+.pv:nth-child(5) {
     background-color: #ffc1f3;
- }
+}
 
- .pv:nth-child(6) {
+.pv:nth-child(6) {
     background-color: #fce2ce
- }
+}
 
 /*Мотивационный блок на стыке списка вакансий и выгод*/
 
- .motivation {
-background-color: #00bcd4 ;
+.motivation {
+    background-color: #00bcd4;
 }
 
 .motivation>.container {
@@ -438,8 +451,9 @@ background-color: #00bcd4 ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
+
 .motivation-item {
     width: calc(33% - 60px);
     color: rgb(249, 249, 249);
@@ -448,19 +462,19 @@ background-color: #00bcd4 ;
 }
 
 .motivation-item h3 {
-font-size: 36px;
-font-family: "GolosTextBlack" ;
+    font-size: 36px;
+    font-family: "GolosTextBlack";
 }
 
 .motivation p {
-    font-family: "GolosTextWebRegular" ;
+    font-family: "GolosTextWebRegular";
     font-size: 24px;
 }
 
-/*Футер*/ 
+/*Футер*/
 
 .footer-social {
-padding-top: 50px;
+    padding-top: 50px;
     background-color: #0f4c75;
 }
 
@@ -494,7 +508,7 @@ padding-top: 50px;
 .footer-text p {
     text-align: center;
     font-size: 18px;
-    font-family: "GolosTextWebRegular" ;
+    font-family: "GolosTextWebRegular";
     line-height: 10px;
 }
 
@@ -502,17 +516,37 @@ padding-top: 50px;
     .all_container {
         max-width: 1200px;
     }
-.card {
-     background-color: white;
-     width: calc(45% - 20px);
-     margin: 20px;
-     border-radius: 0 50px 0 0;
-     transition: 0.5s;
-     
- }
- .motivation-item {
-    width: calc(45% - 60px);
-}
+
+    .offer h1 {
+        font-size: 70px;
+    }
+
+    .h2 {
+       display: block;
+       margin-bottom: 50px;
+    }
+
+    .header-button {
+       width:fit-content;
+       margin: 0 auto;
+    }
+
+    .h2 p {
+       text-align: center;
+    }
+
+    .card {
+        background-color: white;
+        width: calc(45% - 20px);
+        margin: 20px;
+        border-radius: 0 50px 0 0;
+        transition: 0.5s;
+
+    }
+
+    .motivation-item {
+        width: calc(45% - 60px);
+    }
 
 
 }
@@ -521,39 +555,171 @@ padding-top: 50px;
     .all_container {
         max-width: 992px;
     }
+
+    .header {
+       text-align: center;
+    }
+
+    .offer {
+       width: 100%;
+    }
+
+    .offer h1 {
+        font-size: 60px;
+        margin: 0 0;
+    }
+
+    .offer h2 {
+       margin: 0 0 50px;
+    }
+
+    .header .social-media {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 30%;
+       margin: 0 auto;
+    }
+
+    .h2 {
+       display: block;
+       margin-bottom: 40px;
+    }
+
+    .header-button {
+       width:fit-content;
+       margin: 0 auto;
+    }
+
+
+
     .card {
-         background-color: white;
-         width: calc(80% - 20px);
-         margin: 20px;
-         border-radius: 0 50px 0 0;
-         transition: 0.5s;
-         
-     }
-     .motivation-item {
+        background-color: white;
+        width: calc(80% - 20px);
+        margin: 20px;
+        border-radius: 0 50px 0 0;
+        transition: 0.5s;
+
+    }
+
+    .motivation-item {
         width: calc(80% - 60px);
     }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .all_container {
+        max-width: 768px;
     }
-  
-    
+    .offer {
+       width: 100%;
+    }
+    .offer h1 {
+        font-size: 40px;
+    }
 
-    @media screen and (max-width: 768px) {
-        .all_container {
-            max-width: 768px;
-        }
-        .card {
-            
-             background-color: white;
-             width: calc(80% - 20px);
-             margin: 20px;
-             border-radius: 0 50px 0 0;
-             transition: 0.5s;
-             
-         }
-         .motivation-item {
-            width: calc(80% - 60px);
-        }
-        }
+    .header {
+       padding-bottom: 20px;
+    }
 
-p {
-    
+    .header .social-media {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 40px;
+
+    }
+
+    .h2 {
+       display: block;
+       margin-bottom: 30px;
+    }
+
+    .header-button {
+       width:fit-content;
+       margin: 0 auto;
+    }
+
+
+    .card {
+
+        background-color: white;
+        width: calc(80% - 20px);
+        margin: 20px;
+        border-radius: 0 50px 0 0;
+        transition: 0.5s;
+
+    }
+
+    .motivation-item {
+        width: calc(80% - 60px);
+    }
+}
+
+@media screen and (max-width: 440px) {
+   .all_container {
+       max-width: 440px;
+   }
+   .offer {
+      width: 100%;
+   }
+   .offer h1 {
+       font-size: 30px;
+   }
+
+   .header {
+      padding-bottom: 20px;
+   }
+
+   .header .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+
+   }
+
+   .h2 {
+      display: block;
+      margin-bottom: 30px;
+   }
+
+   .header-button {
+      width:fit-content;
+      margin: 0 auto;
+   }
+
+
+   .card {
+
+       background-color: white;
+       width: calc(80% - 20px);
+       margin: 20px;
+       border-radius: 0 50px 0 0;
+       transition: 0.5s;
+
+   }
+
+   .card .button {
+       font-size: 12px;
+   }
+
+   .motivation-item {
+       width: calc(80% - 60px);
+   }
+   .motivation-item h3 {
+       font-size: 24px;
+       font-family: "GolosTextBlack";
+   }
+
+   .vacansy-container p {
+       font-size: 18px;
+   }
+
+   .card h3 {
+       font-size: 18px;
+   }
+
 }
