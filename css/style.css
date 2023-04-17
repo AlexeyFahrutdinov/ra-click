@@ -188,7 +188,7 @@ a {
 }
 
 .vacansy-container p {
-    padding-top: 50px;
+    padding-top: 40px;
     width: 50%;
     text-align: center;
     margin: 20px auto 30px;
@@ -605,6 +605,11 @@ p.cta1 {
     .motivation-item {
         width: calc(80% - 60px);
     }
+
+    .vacansy-container p {
+        padding-top: 20px;
+       }
+    
 }
 
 
@@ -720,6 +725,27 @@ p.cta1 {
 
    .card h3 {
        font-size: 18px;
+   }
+
+   h2, .vacansy-container h2 {
+    font-size: 24px;
+   }
+
+   .vacansy-container p {
+    padding-top: 10px;
+   }
+
+   h4, .card h4 {
+    font-size: 16px;
+   }
+
+   p {
+    word-wrap: break-word;
+    font-size: 16px;
+   }
+
+   h3 {
+    word-wrap: break-word;
    }
 
 }
