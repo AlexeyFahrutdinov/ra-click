@@ -63,6 +63,7 @@ a {
 .top-menu li {
    display: inline;
    margin: 0 20px;
+   list-style-type:none
 }
 
 .top-menu li:hover {
@@ -618,6 +619,15 @@ p.cta1 {
     .all_container {
         max-width: 768px;
     }
+
+    .top-menu {
+        padding: 5px 0;
+    }
+
+    .top-menu li {
+        display: block;
+        padding: 10px;
+     }
     .offer {
        width: 100%;
     }
@@ -651,7 +661,7 @@ p.cta1 {
     .card {
 
         background-color: white;
-        width: calc(80% - 20px);
+        width: calc(100% - 20px);
         margin: 20px;
         border-radius: 0 50px 0 0;
         transition: 0.5s;
@@ -667,6 +677,10 @@ p.cta1 {
    .all_container {
        max-width: 440px;
    }
+
+   .header-box {
+    margin: 0 20px;
+}
    .offer {
       width: 100%;
    }
@@ -700,7 +714,7 @@ p.cta1 {
    .card {
 
        background-color: white;
-       width: calc(80% - 20px);
+       width: calc(100% - 20px);
        margin: 20px;
        border-radius: 0 50px 0 0;
        transition: 0.5s;
@@ -725,6 +739,10 @@ p.cta1 {
 
    .card h3 {
        font-size: 18px;
+   }
+
+   .card .button {
+    padding: 12px 18px ;
    }
 
    h2, .vacansy-container h2 {
