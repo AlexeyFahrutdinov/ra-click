@@ -510,9 +510,12 @@ p.cta1 {
     text-align: center;
     font-size: 18px;
     font-family: "GolosTextWebRegular";
-    line-height: 10px;
+    line-height: 1.2em;
 }
 
+
+
+/*Медиа запросы */
 @media screen and (max-width: 1200px) {
     .all_container {
         max-width: 1200px;
@@ -546,7 +549,15 @@ p.cta1 {
     }
 
     .motivation-item {
-        width: calc(45% - 60px);
+        width: calc(45% - 40px);
+    }
+
+    .motivation-item {
+        margin: auto 20px;
+    }
+
+    .motivation p {
+        font-size: 22px;
     }
 
 
@@ -604,12 +615,26 @@ p.cta1 {
     }
 
     .motivation-item {
-        width: calc(80% - 60px);
+        width: calc(80% - 20px);
     }
 
     .vacansy-container p {
         padding-top: 20px;
        }
+       .footer-social  .social-media .fa {
+        margin: 0 30px 30px 30px;
+       }
+       h2, .vacansy-container h2, .cta-container h2, h2.cta, .vigodi h2 {
+        font-size: 32px;
+       }
+
+       .motivation-item {
+        margin: auto 15px;
+    }
+       .motivation p {
+        font-size: 20px;
+    }
+       
     
 }
 
@@ -647,7 +672,7 @@ p.cta1 {
 
     }
 
-    .h2 {
+    .h2, h2.cta {
        display: block;
        margin-bottom: 30px;
     }
@@ -669,7 +694,19 @@ p.cta1 {
     }
 
     .motivation-item {
-        width: calc(80% - 60px);
+        width: calc(80% - 20px);
+    }
+    .footer-social  .social-media .fa {
+        margin: 0 20px 20px 20px;
+       }
+       h2, .vacansy-container h2, .cta-container h2, h2.cta, .vigodi h2 {
+        font-size: 28px;
+       }
+       .motivation p {
+        font-size: 18px;
+    }
+    .motivation-item {
+        margin: auto 10px;
     }
 }
 
@@ -726,7 +763,7 @@ p.cta1 {
    }
 
    .motivation-item {
-       width: calc(80% - 60px);
+       width: calc(80% - 20px);
    }
    .motivation-item h3 {
        font-size: 24px;
@@ -745,7 +782,7 @@ p.cta1 {
     padding: 12px 18px ;
    }
 
-   h2, .vacansy-container h2 {
+   h2, .vacansy-container h2, .cta-container h2, h2.cta, .vigodi h2 {
     font-size: 24px;
    }
 
@@ -764,6 +801,10 @@ p.cta1 {
 
    h3 {
     word-wrap: break-word;
+   }
+
+   .footer-social  .social-media .fa {
+    margin: 0 10px 10px 10px;
    }
 
 }
