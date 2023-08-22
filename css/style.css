@@ -1,16 +1,19 @@
 @font-face {
     font-family: "GolosTextWebRegular";
     src: url(/fonts/18549.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "GolosTextBlack";
-    src: url(/fonts/Golostextblack.ttf)
+    src: url(/fonts/Golostextblack.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: "GolosTextMedium";
     src: url(/fonts/Golostextmedium.ttf);
+    font-display: swap;
 }
 
 
@@ -85,14 +88,14 @@ a {
 }
 
 .offer h1 {
-    font-family: "GolosTextBlack";
+    font-family: "GolosTextBlack", sans-serif;
     font-size: 80px;
     margin: 30px 0;
 }
 
 .offer h2,
 .h2 {
-    font-family: "GolosTextMedium";
+    font-family: "GolosTextMedium", sans-serif;
     margin: 30px 0 80px;
 }
 
@@ -179,7 +182,7 @@ a {
 
 .vacansy-container h2,
 .vigodi h2 {
-    font-family: "GolosTextBlack";
+    font-family: "GolosTextBlack", sans-serif;
 }
 
 .icon-vacansy {
@@ -222,7 +225,7 @@ a {
 .card h3 {
     margin: 20px auto;
     max-width: 330px;
-    font-family: "GolosTextBlack";
+    font-family: "GolosTextBlack", sans-serif;
     color: #1f4068;
     font-size: 24px;
     text-align: center;
@@ -269,7 +272,7 @@ a {
 }
 
 .card h4 {
-    font-family: "GolosTextMedium";
+    font-family: "GolosTextMedium", sans-serif;
     text-align: center;
     color: #1F4068;
     font-size: 24px;
@@ -304,7 +307,7 @@ a {
 .cta-container h2,
 h2.cta {
     text-align: center;
-    font-family: "GolosTextBlack";
+    font-family: "GolosTextBlack", sans-serif;
     font-size: 48px;
     color: #f9f9f9;
     margin-bottom: 40px;
@@ -319,7 +322,7 @@ h2.cta {
 
 p.cta {
     text-align: center;
-    font-family: "GolosTextMedium";
+    font-family: "GolosTextMedium", sans-serif;
     font-size: 18px;
     color: #f9f9f9;
     margin-bottom: 10px;
@@ -360,7 +363,7 @@ p.cta1 {
     width: calc(33.33% - 20px);
     border-radius: 3px;
     font-size: 18px;
-    font-family: "GolosTextMedium";
+    font-family: "GolosTextMedium", sans-serif;
     background-image: linear-gradient(to right bottom, #ffce3a, #ff0e69);
     color: #f9f9f9;
 }
@@ -466,11 +469,11 @@ p.cta1 {
 
 .motivation-item h3 {
     font-size: 36px;
-    font-family: "GolosTextBlack";
+    font-family: "GolosTextBlack", sans-serif;
 }
 
 .motivation p {
-    font-family: "GolosTextWebRegular";
+    font-family: "GolosTextWebRegular", sans-serif;
     font-size: 24px;
 }
 
@@ -492,7 +495,7 @@ p.cta1 {
         text-align: center;
         font-size: 48px;
         color: #1F4068;
-        font-family: "GolosTextBlack";
+        font-family: "GolosTextBlack", sans-serif;
         margin-bottom: 18px;
 }
 
@@ -508,7 +511,7 @@ p.cta1 {
 }
 
 .text-content h3 {
-    font-family: "GolosTextBlack";
+    font-family: "GolosTextBlack", sans-serif;
     color: #1f4068;
     font-size: 24px;
     text-align: center;
@@ -567,7 +570,7 @@ hr {
 .footer-text p {
     text-align: center;
     font-size: 18px;
-    font-family: "GolosTextWebRegular";
+    font-family: "GolosTextWebRegular", sans-serif;
     line-height: 1.2em;
 }
 
@@ -846,7 +849,7 @@ hr {
 
     .motivation-item h3 {
         font-size: 24px;
-        font-family: "GolosTextBlack";
+        font-family: "GolosTextBlack", sans-serif;
     }
 
     .vacansy-container p {
