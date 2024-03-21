@@ -1,0 +1,982 @@
+@font-face {
+    font-family: "GolosTextWebRegular";
+    src: url(/fonts/18549.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GolosTextBlack";
+    src: url(/fonts/Golostextblack.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GolosTextMedium";
+    src: url(/fonts/Golostextmedium.ttf);
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: inherit;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 800px;
+}
+
+.top-menu {
+    padding: 50px 0;
+}
+
+.top-menu ul {
+    text-align: center;
+    font-family: "GolosTextWebRegular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.top-menu li {
+    display: inline;
+    padding: 0 20px;
+    list-style-type: none
+}
+
+.top-menu li:hover {
+    text-decoration: underline;
+}
+
+
+.header-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 50px;
+}
+
+.offer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.offer h1 {
+    font-family: "GolosTextBlack", sans-serif;
+    font-size: 80px;
+    margin: 30px 0;
+}
+
+.offer h2,
+.h2 {
+    font-family: "GolosTextMedium", sans-serif;
+    margin: 30px 0 80px;
+}
+
+.h2 {
+    display: flex;
+    align-items: baseline;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.header-button,
+.card .button {
+    background: linear-gradient(to right bottom, #19fcfc, #831bf9);
+    border-radius: 5px;
+    padding: 18px 25px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.header-button:hover,
+.card .button {
+    transform: translateY(10px)
+}
+
+.header .fa {
+    font-size: 42px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    transition: 1s;
+
+}
+
+.header .fa:hover {
+    background-color: #7439F9;
+    background: linear-gradient(to bottom, #19fcfc, #831bf9);
+    border: 2px solid #831bf9;
+
+}
+
+
+
+
+
+.test {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to top left, powderblue, pink);
+
+    color: white;
+    margin: 0 auto;
+}
+
+.test:hover {
+    transform: translateY(10px)
+}
+
+
+
+/*Блок с вакансиями */
+.vacansy-container,
+.cta-container {
+    padding-top: 55px;
+}
+
+.vacansy {
+    background-color: #ECEEF7;
+    padding-bottom: 50px;
+    counter-reset: mycount 0;
+}
+
+
+
+.vacansy-container h2,
+.vacansy-container i,
+.vigodi i,
+.vigodi h2 {
+    text-align: center;
+    font-size: 48px;
+    color: #1F4068;
+
+}
+
+.vacansy-container h2,
+.vigodi h2 {
+    font-family: "GolosTextBlack", sans-serif;
+}
+
+.icon-vacansy {
+    margin: 0 auto;
+    width: 44px;
+    padding: 40px 0 10px 0;
+}
+
+.vacansy-container p {
+    width: 50%;
+    text-align: center;
+    margin: 20px auto 20px;
+    font-weight: 400;
+    font-family: 'GolosTextWebRegular', sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    color: #1F4068;
+    ;
+}
+
+.card-vacansy {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    flex-wrap: wrap;
+
+}
+
+/*Карточка вакансии*/
+
+.vacansy-card {
+    background-color: white;
+    max-width: 390px;
+    width: calc(30% - 20px);
+    margin: 20px;
+    border-radius: 0 50px 0 0;
+    transition: 0.5s;
+}
+.vacansy-card__title {
+    margin: 20px auto;
+    max-width: 330px;
+    font-family: "GolosTextBlack", sans-serif;
+    color: #1f4068;
+    font-size: 24px;
+    text-align: center;
+}
+
+.vacansy-card__image-icon {
+    display: inline-block;
+    position: relative;
+    counter-increment: mycount;
+}
+.vacansy-card__image-icon::before {
+    content: counter(mycount);
+    background: #e6739f;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 24px;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    font-family: 'GolosTextWebRegular', sans-serif;
+}
+.vacansy-card__image {
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 0 30px;
+
+}
+.vacansy-card__benefits {
+    width: calc(100% - 60px);
+    text-align: start;
+    list-style-type: none;
+
+}
+.vacansy-card__benefit {
+    font-weight: 400;
+    font-family: 'GolosTextWebRegular', sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    color: #1F4068;
+}
+.vacansy-card__income {
+    font-family: "GolosTextMedium", sans-serif;
+    text-align: center;
+    color: #1F4068;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px auto 20px;
+}
+.vacansy-card__button {
+    display: block;
+    background: linear-gradient(to right bottom, #19fcfc, #831bf9);
+    border-radius: 5px;
+    padding: 18px 25px;
+    transition: 0.5s;
+    width: calc(70% - 20px);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px auto 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.card {
+    background-color: white;
+    max-width: 390px;
+    width: calc(30% - 20px);
+    margin: 20px;
+    border-radius: 0 50px 0 0;
+    transition: 0.5s;
+
+}
+
+.card h3 {
+    margin: 20px auto;
+    max-width: 330px;
+    font-family: "GolosTextBlack", sans-serif;
+    color: #1f4068;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card img {
+
+    width: calc(100% - 60px);
+    height: auto;
+    margin: 0 30px;
+
+}
+
+.img-icon {
+    display: inline-block;
+    position: relative;
+    counter-increment: mycount;
+
+
+}
+
+.img-icon::before {
+
+    content: counter(mycount);
+    background: #e6739f;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 24px;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    font-family: 'GolosTextWebRegular', sans-serif;
+}
+
+.card p {
+    width: calc(100% - 60px);
+    text-align: start;
+
+
+}
+
+.card h4 {
+    font-family: "GolosTextMedium", sans-serif;
+    text-align: center;
+    color: #1F4068;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px auto 20px;
+}
+
+.card .button {
+    width: calc(70% - 20px);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px auto 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.call-to-action {
+    background-color: #5F6CAF;
+}
+
+.cta-container {
+    padding: 30px;
+    padding-top: 55px;
+}
+
+.fa {
+    margin: 0 auto;
+}
+
+.cta-container h2,
+h2.cta {
+    text-align: center;
+    font-family: "GolosTextBlack", sans-serif;
+    font-size: 48px;
+    color: #f9f9f9;
+    margin-bottom: 40px;
+}
+
+.cta-icon {
+    width: calc(8.33% - 20px);
+    margin: 0 auto;
+    font-size: 48px;
+    color: #f9f9f9;
+}
+
+p.cta {
+    text-align: center;
+    font-family: "GolosTextMedium", sans-serif;
+    font-size: 18px;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+p.cta1 {
+    margin-bottom: 40px;
+}
+
+.cta-form {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cta-form input {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    padding: 14px 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+}
+
+.cta-form input::placeholder {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'GolosTextWebRegular', sans-serif;
+    color: #B3C8EA;
+}
+
+.cta-form button {
+    padding: 12px 10px;
+    border: 0px solid white;
+    width: calc(33.33% - 20px);
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: "GolosTextMedium", sans-serif;
+    background-image: linear-gradient(to right bottom, #ffce3a, #ff0e69);
+    color: #f9f9f9;
+}
+
+.sogl-obr-pd {
+    display: flex;
+    margin: 10px auto;
+    color: #f9f9f9;
+
+
+}
+
+.sogl-obr-pd input {
+    width: 20px;
+    height: auto;
+}
+
+
+/* Выгоды */
+
+.vigodi {
+    margin-bottom: 50px;
+    background: linear-gradient(to bottom, #ffffff, #b0e8e8, #ffffff);
+}
+
+.vigodi .pv {
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+
+
+
+.icon-vigodi,
+.icon-vacansy {
+    width: 44px;
+    margin: 0 auto;
+}
+
+.vigodi .container {
+    padding-top: 50px;
+}
+
+.wraper {
+    margin-top: 40px;
+}
+
+.pv {
+    width: fit-content;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'GolosTextWebRegular', sans-serif;
+    font-size: 24px;
+    line-height: 1.55;
+    background: #fff;
+    margin: 30px auto;
+    box-shadow: 0 22px 30px 0 rgba(15, 8, 49, .1);
+}
+
+.pv:nth-child(1) {
+    background-color: #ffc1f3;
+}
+
+.pv:nth-child(2) {
+    background-color: #fce2ce;
+}
+
+.pv:nth-child(3) {
+    background-color: #f9f7d9;
+}
+
+.pv:nth-child(4) {
+    background-color: #cffffe
+}
+
+.pv:nth-child(5) {
+    background-color: #ffc1f3;
+}
+
+.pv:nth-child(6) {
+    background-color: #fce2ce
+}
+
+/*Мотивационный блок на стыке списка вакансий и выгод*/
+
+.motivation {
+    background-color: #00bcd4;
+}
+
+.motivation>.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.motivation-item {
+    width: calc(33% - 60px);
+    color: rgb(249, 249, 249);
+    margin: auto 30px;
+    text-align: center;
+}
+
+.motivation-item h3 {
+    font-size: 36px;
+    font-family: "GolosTextBlack", sans-serif;
+}
+
+.motivation p {
+    font-family: "GolosTextWebRegular", sans-serif;
+    font-size: 24px;
+}
+
+
+/*Блок текстового контента начало*/
+
+.icon-text-content {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 48px;
+    color: #1F4068;
+}
+
+.text-content {
+  padding-bottom: 50px;
+}
+
+.text-content h2 {
+        text-align: center;
+        font-size: 48px;
+        color: #1F4068;
+        font-family: "GolosTextBlack", sans-serif;
+        margin-bottom: 18px;
+}
+
+.text-content p, .text-content li {
+   color: #1F4068;
+   font-size: 18px;
+   font-weight:400; 
+   font-family: "GolosTextWebRegular", sans-serif;
+   line-height: 1.55;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+.text-content h3 {
+    font-family: "GolosTextBlack", sans-serif;
+    color: #1f4068;
+    font-size: 24px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 18px;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid #eeeeef;
+    margin: 30px auto 40px;
+    clear: both;
+    max-width: 800px;
+}
+
+/*Блок текстового контента конец*/
+
+
+
+/*Футер*/
+.footer-social {
+    padding-top: 50px;
+    background-color: #0f4c75;
+}
+
+.footer-social .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social .social-media .fa {
+    font-size: 42px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    transition: 1s;
+    color: white;
+    margin: 0 50px 50px 50px;
+}
+
+.footer-social .social-media .fa:hover {
+    background-color: #7439F9;
+    background: linear-gradient(to bottom, #19fcfc, #831bf9);
+    border: 2px solid #831bf9;
+}
+
+.footer-text {
+    padding-bottom: 50px;
+}
+
+.footer-text p {
+    text-align: center;
+    font-size: 18px;
+    font-family: "GolosTextWebRegular", sans-serif;
+    line-height: 1.2em;
+}
+
+
+
+/*Медиа запросы */
+@media screen and (max-width: 1200px) {
+    .all_container {
+        max-width: 1200px;
+    }
+
+    .offer h1 {
+        font-size: 70px;
+    }
+
+    .h2 {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .header-button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .h2 p {
+        text-align: center;
+    }
+
+    .card {
+        background-color: white;
+        width: calc(45% - 20px);
+        margin: 20px;
+        border-radius: 0 50px 0 0;
+        transition: 0.5s;
+
+    }
+
+    .motivation-item {
+        width: calc(45% - 40px);
+    }
+
+    .motivation-item {
+        margin: auto 20px;
+    }
+
+    .motivation p {
+        font-size: 22px;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .all_container {
+        max-width: 992px;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .offer {
+        width: 100%;
+    }
+
+    .offer h1 {
+        font-size: 60px;
+        margin: 0 0;
+    }
+
+    .offer h2 {
+        margin: 0 0 50px;
+    }
+
+    .header .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .h2 {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .header-button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+
+
+    .card {
+        background-color: white;
+        width: calc(80% - 20px);
+        margin: 20px;
+        border-radius: 0 50px 0 0;
+        transition: 0.5s;
+
+    }
+
+    .motivation-item {
+        width: calc(80% - 20px);
+    }
+
+    .vacansy-container p {
+        padding-top: 20px;
+    }
+
+    .footer-social .social-media .fa {
+        margin: 0 30px 30px 30px;
+    }
+
+    h2,
+    .vacansy-container h2,
+    .cta-container h2,
+    h2.cta,
+    .vigodi h2 {
+        font-size: 32px;
+    }
+
+    .motivation-item {
+        margin: auto 15px;
+    }
+
+    .motivation p {
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .all_container {
+        max-width: 768px;
+    }
+
+    .top-menu {
+        padding: 5px 0;
+    }
+
+    .top-menu li {
+        display: block;
+        padding: 10px;
+    }
+
+    .offer {
+        width: 100%;
+    }
+
+    .offer h1 {
+        font-size: 40px;
+    }
+
+    .header {
+        padding-bottom: 20px;
+    }
+
+    .header .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+    }
+
+    .h2,
+    h2.cta {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .header-button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+
+    .card {
+
+        background-color: white;
+        width: calc(100% - 20px);
+        margin: 20px;
+        border-radius: 0 50px 0 0;
+        transition: 0.5s;
+
+    }
+
+    .motivation-item {
+        width: calc(80% - 20px);
+    }
+
+    .footer-social .social-media .fa {
+        margin: 0 20px 20px 20px;
+    }
+
+    h2,
+    .vacansy-container h2,
+    .cta-container h2,
+    h2.cta,
+    .vigodi h2 {
+        font-size: 28px;
+    }
+
+    .motivation p {
+        font-size: 18px;
+    }
+
+    .motivation-item {
+        margin: auto 10px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .all_container {
+        max-width: 440px;
+    }
+
+    .header-box {
+        margin: 0 20px;
+    }
+
+    .offer {
+        width: 100%;
+    }
+
+    .offer h1 {
+        font-size: 30px;
+    }
+
+    .header {
+        padding-bottom: 20px;
+    }
+
+    .header .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+    }
+
+    .h2 {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .header-button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+
+    .card {
+
+        background-color: white;
+        width: calc(100% - 20px);
+        margin: 20px;
+        border-radius: 0 50px 0 0;
+        transition: 0.5s;
+
+    }
+
+    .card .button {
+        font-size: 12px;
+    }
+
+    .motivation-item {
+        width: calc(80% - 20px);
+    }
+
+    .motivation-item h3 {
+        font-size: 24px;
+        font-family: "GolosTextBlack", sans-serif;
+    }
+
+    .vacansy-container p {
+        font-size: 18px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card .button {
+        padding: 12px 18px;
+    }
+
+    h2,
+    .vacansy-container h2,
+    .cta-container h2,
+    h2.cta,
+    .vigodi h2 {
+        font-size: 24px;
+    }
+
+    .vacansy-container p {
+        padding-top: 10px;
+    }
+
+    h4,
+    .card h4 {
+        font-size: 16px;
+    }
+
+    p {
+        word-wrap: break-word;
+        font-size: 16px;
+    }
+
+    h3 {
+        word-wrap: break-word;
+    }
+
+    .footer-social .social-media .fa {
+        margin: 0 10px 10px 10px;
+    }
+
+}
